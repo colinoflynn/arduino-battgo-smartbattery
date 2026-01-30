@@ -4,7 +4,7 @@ Arduino library for communicating with BattGO-enabled batteries/devices (ISDT Ba
 
 This is a port from the [go-battgo](https://github.com/BertoldVdb/go-battgo) project by Bertold Van den Bergh. You may also find the
 [python-battgo-smartbattery](https://github.com/colinoflynn/python-battgo-smartbattery) implementation for sniffing/debugging useful, which is
-also a port from the go project.
+also a port from the go project (core code ported using LLMs).
 
 This library implements:
 - **PHY layer**: framing/byte-stuffing, checksum, scrambler (ported from `go-battgo`).
