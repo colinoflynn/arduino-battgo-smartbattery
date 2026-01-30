@@ -1,6 +1,6 @@
 # ArduinoBattGoSmartBattery
 
-Arduino library for communicating with BattGO-enabled batteries/devices (ISDT BattGO), most commonly found as part of Spektrum Smart Battery G2.
+Arduino library for communicating with BattGO-enabled batteries/devices (ISDT BattGO), most commonly found as part of Spektrum SMART Battery G2.
 
 This is a port from the [go-battgo](https://github.com/BertoldVdb/go-battgo) project by Bertold Van den Bergh. You may also find the
 [python-battgo-smartbattery](https://github.com/colinoflynn/python-battgo-smartbattery) implementation for sniffing/debugging useful, which is
@@ -28,4 +28,4 @@ See `examples/ReadBatteryInfo/ReadBatteryInfo.ino`.
 
 ## Disclaimers
 
-This is provided AS-IS - you may damage your batteries or charger, this is NOT an official protocol or project and based on other open-source projects. See LICENSE. You are responsible for safe usage and charging of your batteries. This is NOT associated with any manufacturer or official battery provider. Any trademarks referenced belong to their associated owners, and those trademarks are used to identify the products, not to imply any affiliation, endorsement, or sponsorship of the trademark owners.
+This is provided AS-IS - you may damage your batteries or charger, this is NOT an official protocol or project and based on other open-source projects. See [LICENSE](LICENSE). You are responsible for safe usage and charging of your batteries. This is NOT associated with any manufacturer or official battery provider. Horizon Hobby, IC3, and EC3 are either claimed or registered trademarks of Horizon Hobby, LCC. Spektrum is a trademark of Bachmann Industries, Inc. This project is not associated with Horizon Hobby or Bachmann Industries, Inc. Any trademarks referenced belong to their associated owners, and those trademarks are used to identify the products, not to imply any affiliation, endorsement, or sponsorship of the trademark owners.
