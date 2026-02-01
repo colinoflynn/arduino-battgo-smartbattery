@@ -1,3 +1,12 @@
+/*
+Distributed under the BSD 2-Clause License - see LICENSE file in repo at
+https://github.com/colinoflynn/arduino-battgo-smartbattery
+
+Copyright (c) 2026, Colin O'Flynn
+This project is a derivative of the go-battgo project which is:
+Copyright (c) 2021, Bertold Van den Bergh
+*/
+
 #pragma once
 #include <Arduino.h>
 #include <Stream.h>
@@ -5,7 +14,7 @@
 typedef bool (*BattGoPacketHandler)(uint8_t src, uint8_t dst, const uint8_t* payload, size_t len);
 typedef void (*BattGoPresenceHandler)(uint8_t b);
 
-// BattGoPHY implements the Go `phy.PHY` framing/checksum/scramble logic on top of an Arduino Stream.
+// BattGoPHY implements the framing/checksum/scramble logic
 class BattGoPHY {
 public:
   explicit BattGoPHY(Stream& serial) : _s(serial) {}
@@ -41,7 +50,7 @@ private:
   uint8_t _payloadBuf[260];
   int _payloadPos = 0;
 
-  // TX seed increments per packet like Go (wrap at 0xFF)
+  // TX seed increments per packet (wrap at 0xFF)
   uint8_t _txSeed = 0;
 
   static void scramble(uint8_t seed, uint8_t* data, size_t len);

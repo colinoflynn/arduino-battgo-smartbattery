@@ -1,6 +1,8 @@
 BSD 2-Clause License
 
 Copyright (c) 2026, Colin O'Flynn
+This project is a derivative of the go-battgo project which is:
+Copyright (c) 2021, Bertold Van den Bergh
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:

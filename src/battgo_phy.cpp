@@ -1,11 +1,15 @@
+/*
+Distributed under the BSD 2-Clause License - see LICENSE file in repo at
+https://github.com/colinoflynn/arduino-battgo-smartbattery
+
+Copyright (c) 2026, Colin O'Flynn
+This project is a derivative of the go-battgo project which is:
+Copyright (c) 2021, Bertold Van den Bergh
+*/
+
 #include "battgo_phy.h"
 
 void BattGoPHY::scramble(uint8_t seed, uint8_t* data, size_t len) {
-  // Go:
-  // xor := seed + 136
-  // out[i] = in[i] ^ xor
-  // xor += seed
-  // xor ^= seed
   uint8_t x = (uint8_t)(seed + 136);
   for (size_t i = 0; i < len; i++) {
     data[i] ^= x;
